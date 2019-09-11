@@ -1,5 +1,9 @@
 package vehicles;
 
+import components.Component;
+
+import java.util.ArrayList;
+
 public abstract class Vehicle {
 
     private String colour;
@@ -7,6 +11,7 @@ public abstract class Vehicle {
     private int topSpeed;
     private int capacity;
     private int price;
+    private ArrayList<Component> components;
 
     public Vehicle(String colour, String model, int topSpeed, int capacity, int price){
         this.colour = colour;
@@ -14,6 +19,7 @@ public abstract class Vehicle {
         this.topSpeed = topSpeed;
         this.capacity = capacity;
         this.price = price;
+        this.components = new ArrayList<Component>();
 
     }
 
